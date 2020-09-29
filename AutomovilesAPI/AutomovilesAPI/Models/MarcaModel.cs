@@ -16,5 +16,6 @@ namespace AutomovilesAPI.Models
         [StringLength(40)]
         public string Founder { get; set; }
         public DateTime? FoundationDate { get; set; }
+        public IEnumerable<AutomovilModel> Automoviles { get; set; }
     }
 }

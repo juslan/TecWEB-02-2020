@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 namespace AutomovilesAPI.Controllers
 {
     [Route("api/[controller]")]
-    public class MarcasController : Controller
+    public class MarcasController : ControllerBase
     {
         public IMarcasService _marcaService;
         public MarcasController(IMarcasService marcaService)
