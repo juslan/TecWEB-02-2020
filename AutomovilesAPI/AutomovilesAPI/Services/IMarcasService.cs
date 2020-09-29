@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace AutomovilesAPI.Services
 {
-    interface IMarcasService
+    public interface IMarcasService
     {
-        IEnumerable<MarcaModel> GetMarcas();
+        IEnumerable<MarcaModel> GetMarcas(string orderBy);
         MarcaModel GetMarca(int marcaId);
+        MarcaModel CreateMarca(MarcaModel marcaModel);
+        DeleteModel DeleteMarca(int marcaId);
+        MarcaModel UpdateMarca(int marcaId, MarcaModel marcaModel);
     }
 }
